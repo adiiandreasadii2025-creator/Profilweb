@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website profil dan portofolio mahasiswa Andreas Adii.">
+  <title>Profil Mahasiswa | Andreas Adii</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a class="brand" href="#beranda">Andreas<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#proyek">Proyek</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">PORTOFOLIO MAHASISWA</p>
+          <h1>Halo, saya <span>Andreas Adii</span></h1>
+          <h2>Mahasiswa Sistem Informasi</h2>
+          <p class="hero-description">
+            Mahasiswa Universitas Cenderawasih yang tertarik pada teknologi,
+            pengembangan website, analisis data, dan pemanfaatan kecerdasan buatan
+            untuk menciptakan solusi digital yang bermanfaat.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#proyek">Lihat Proyek</a>
+            <a class="button button-outline" href="#kontak">Hubungi Saya</a>
+          </div>
+        </div>
+
+        <div class="profile-frame">
+          <!-- Simpan foto dengan nama Andreas.jpg di folder yang sama.
+               Jika belum ada foto, inisial AA akan ditampilkan. -->
+          <img
+            src="Andreas.jpeg"
+            alt="Foto profil Andreas Adii"
+            class="profile-photo"
+            onerror="this.style.display='none'; document.getElementById('photoFallback').style.display='grid';"
+          >
+          <div class="photo-fallback" id="photoFallback" aria-label="Inisial Andreas Adii">AA</div>
+          <div class="profile-caption">
+            <strong>Andreas Adii</strong>
+            <span>Universitas Cenderawasih</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tentang">
+      <div class="container narrow">
+        <p class="eyebrow">PERKENALAN</p>
+        <h2 class="section-heading">Tentang Saya</h2>
+        <p class="section-text">
+          Saya Andreas Adii, mahasiswa Program Studi Sistem Informasi,
+          Universitas Cenderawasih. Saya sedang membangun pengetahuan dan
+          keterampilan di bidang teknologi informasi. Saya senang belajar,
+          mencoba hal baru, bekerja sama, dan mengembangkan kemampuan untuk
+          memecahkan masalah melalui teknologi.
+        </p>
+        <div class="info-grid">
+          <div class="info-card"><span>Nama</span><strong>Andreas Adii</strong></div>
+          <div class="info-card"><span>Program Studi</span><strong>Sistem Informasi</strong></div>
+          <div class="info-card"><span>Universitas</span><strong>Universitas Cenderawasih</strong></div>
+          <div class="info-card"><span>Fokus Belajar</span><strong>Teknologi Digital</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="keahlian">
+      <div class="container">
+        <p class="eyebrow">KEMAMPUAN</p>
+        <h2 class="section-heading">Keahlian Saya</h2>
+        <p class="section-subheading">Bidang yang sedang saya pelajari dan kembangkan.</p>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon">⌨️</div>
+            <h3>HTML</h3>
+            <p>Menyusun struktur dan konten halaman website.</p>
+            <span class="skill-tag">Dasar</span>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">🎨</div>
+            <h3>CSS</h3>
+            <p>Mengatur tata letak, warna, dan tampilan website.</p>
+            <span class="skill-tag">Dasar</span>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">⚡</div>
+            <h3>JavaScript</h3>
+            <p>Mempelajari logika dan interaksi pada halaman web.</p>
+            <span class="skill-tag">Sedang dipelajari</span>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">📊</div>
+            <h3>Analisis Data</h3>
+            <p>Mempelajari cara membaca dan mengolah informasi.</p>
+            <span class="skill-tag">Sedang dipelajari</span>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">🤖</div>
+            <h3>Artificial Intelligence</h3>
+            <p>Memanfaatkan AI sebagai alat bantu belajar dan berkarya.</p>
+            <span class="skill-tag">Sedang dipelajari</span>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">🖥️</div>
+            <h3>Microsoft Office</h3>
+            <p>Mengolah dokumen, tabel, dan bahan presentasi.</p>
+            <span class="skill-tag">Dasar</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proyek">
+      <div class="container">
+        <p class="eyebrow">HASIL BELAJAR</p>
+        <h2 class="section-heading">Proyek Saya</h2>
+        <p class="section-subheading">Tempat menampilkan karya dan latihan yang sudah dibuat.</p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-number">01</div>
+            <h3>Website Profil Mahasiswa</h3>
+            <p>Website sederhana untuk memperkenalkan identitas, keahlian, dan kontak.</p>
+            <span class="project-label">HTML · CSS · JavaScript</span>
+          </article>
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <h3>Latihan Pengembangan Website</h3>
+            <p>Kumpulan latihan membuat halaman web dan memahami dasar pemrograman.</p>
+            <span class="project-label">Pembelajaran</span>
+          </article>
+          <article class="project-card">
+            <div class="project-number">03</div>
+            <h3>Ide Proyek Digital</h3>
+            <p>Ruang untuk mengembangkan gagasan solusi digital bagi kampus dan masyarakat.</p>
+            <span class="project-label">Pengembangan ide</span>
+          </article>
+        </div>
+        <p class="note">Catatan: ubah judul dan deskripsi proyek sesuai karya yang benar-benar sudah kamu buat.</p>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="kontak">
+      <div class="container narrow contact-panel">
+        <p class="eyebrow">TERHUBUNG</p>
+        <h2 class="section-heading">Hubungi Saya</h2>
+        <p class="section-subheading">Silakan hubungi saya melalui WhatsApp atau email.</p>
+        <div class="contact-actions">
+          <!-- Ganti nomor di bawah dengan nomor WhatsApp aktif, format 62 tanpa + atau spasi. -->
+          <a class="button button-whatsapp" href="https://wa.me/6282195501569" target="_blank" rel="noopener">WhatsApp Saya</a>
+          <!-- Ganti alamat email dengan email milikmu. -->
+          <a class="button button-primary" href="mailto:adiiandreasadii.com">Email Saya</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="currentYear"></span> Andreas Adii · Website Profil Mahasiswa</p>
+    </div>
+  </footer>
+</body>
+</html>
